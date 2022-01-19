@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DA3F32B2798C0A500176F9E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F32A2798C0A500176F9E /* main.cpp */; };
+		5DA3F3322798C4A500176F9E /* Card_Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F3312798C4A500176F9E /* Card_Game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		5DA3F3272798C0A500176F9E /* Card_Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Card_Game; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DA3F32A2798C0A500176F9E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5DA3F3312798C4A500176F9E /* Card_Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card_Game.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 		5DA3F31E2798C0A500176F9E = {
 			isa = PBXGroup;
 			children = (
-				5DA3F3292798C0A500176F9E /* Card_Game */,
+				5DA3F3312798C4A500176F9E /* Card_Game.cpp */,
 				5DA3F3282798C0A500176F9E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +52,6 @@
 				5DA3F3272798C0A500176F9E /* Card_Game */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5DA3F3292798C0A500176F9E /* Card_Game */ = {
-			isa = PBXGroup;
-			children = (
-				5DA3F32A2798C0A500176F9E /* main.cpp */,
-			);
-			path = Card_Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +111,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DA3F32B2798C0A500176F9E /* main.cpp in Sources */,
+				5DA3F3322798C4A500176F9E /* Card_Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
