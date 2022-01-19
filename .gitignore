@@ -1,3 +1,5 @@
+#Editor stuff
+*.xcodeproj
 # Prerequisites
 *.d
 
