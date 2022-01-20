@@ -10,10 +10,19 @@
 class Counter
 {
 public:
+  Counter();
+  Counter(const Counter&);
+  ~Counter();
+  
+  int increment(int amount);
+  int decrement(int amount);
+  int getCount()const;
+  int display()const;
   
 protected:
+  int count;
   
 private:
-}
+};
 
 #endif /* Counter_h */

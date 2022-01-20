@@ -7,6 +7,7 @@
 
 #ifndef Player_Deck_h
 #define Player_Deck_h
+#include "Card.h"
 
 class Player_Deck
 {
@@ -15,6 +16,6 @@ public:
 protected:
   
 private:
-}
+};
 
 #endif /* Player_Deck_h */
