@@ -4,8 +4,11 @@
 */
 #include <iostream>
 #include "Player.h"
+#include "Player_Deck.h"
+#include "Test.h"
 
 int main()
 {
+  testCard();
   return 0;
 }
