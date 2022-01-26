@@ -15,10 +15,11 @@ class Card
 public:
   Card(std::string name="Default Name",std::string description="description");
   Card(const Card&);
-  ~Card();
+  virtual ~Card();
   
-  virtual int play();
-  virtual int display()const;
+  virtual int play() =0;
+  virtual int display()const =0;
+  int displayCardInfo()const;
   
 protected:
   std::string name;

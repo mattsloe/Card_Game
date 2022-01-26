@@ -9,6 +9,7 @@
 
 int main()
 {
-  testCard();
+  //testCard();
+  testLoadCard();
   return 0;
 }

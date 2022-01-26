@@ -22,8 +22,8 @@ public:
   int chooseCards(int playCard,int holdCard);
   
 protected:
-  Card holdCard;
-  Card rng_card[3];
+ // Card holdCard;
+  //Card rng_card[3];
   std::vector<Card> drawCards;
   
 private:

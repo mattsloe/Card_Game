@@ -10,6 +10,8 @@
 
 #include <iostream>
 #include "Card.h"
+#include "Card_Loader.h"
+#include <vector>
 
 void testCard()
 {
@@ -49,6 +51,37 @@ void testCard()
   def.display();
   Spell_Card spl("Effect","This is a spell card",1,2,3);
   spl.display();
+}
+
+void testLoadCard()
+{
+  vector<Card*> cardDeck;
+  if(loadFromFile(cardDeck)){
+    std::cout << "Loaded successfully" << std::endl;
+  }else{
+    std::cout << "Error loading deck" << std::endl;
+  }
+  
+  //print the deck
+  for(const auto& aCard:cardDeck){
+    aCard->display();
+  }
+}
+
+
+void testCounter()
+{
+  
+}
+
+void testPlayer()
+{
+  
+}
+
+void testDeck()
+{
+  
 }
 
 

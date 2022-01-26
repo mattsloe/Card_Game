@@ -3,6 +3,6 @@
 #Card type can be <ATK,DEF,SPL>
 ATK|Attacker|This is an attack card|2
 DEF|Defender|This is a defense card|1
-SPL|Healing Potion|This heals for 2|0,0,2
-SPL|Defense Poti|on|This increases DP by 3|0,3,0
-SPL|Beserk Spell|This increases attack by 4 and takes away your defense|4,-99,0
+SPL|Healing Potion|This heals for 2|0 0 2
+SPL|Defense Potion|This increases DP by 3|0 3 0
+SPL|Beserk Spell|This increases attack by 4 and takes away your defense|4 -99 0
