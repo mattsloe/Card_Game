@@ -11,7 +11,11 @@
 #include <iostream>
 #include "Card.h"
 #include "Card_Loader.h"
+#include "Counter.h"
+#include "Player_Deck.h"
 #include <vector>
+
+using namespace std;
 
 void testCard()
 {
@@ -71,7 +75,38 @@ void testLoadCard()
 
 void testCounter()
 {
+ //create a counter
+  Counter aCounter;
+  aCounter.display();
   
+//increment it
+  aCounter.increment();
+  
+//display it
+  aCounter.display();
+  //decrement it
+  aCounter.decrement(3);
+  cout << "Decrement by 3\n";
+  //display it
+  cout << "Should be 0: ";
+  aCounter.display();
+  
+  //create a copy
+  aCounter.increment(5);
+  Counter bCounter(aCounter);
+  cout << "\n Incrementing by 5 and Creating a copy.\n";
+  cout << "Should be 5: ";
+  bCounter.display();
+  
+  //create an initialized
+  cout << "\nCreating Initialized counter to 99\n";
+  Counter cCounter(99);
+  cout << "Should be 99: ";
+  cCounter.display();
+  cout <<"\nCreating Initialized to -99\n";
+  Counter dCounter(-99);
+  cout << "Should be 0: ";
+  dCounter.display();
 }
 
 void testPlayer()
@@ -81,6 +116,17 @@ void testPlayer()
 
 void testDeck()
 {
+  Player_Deck aDeck;
+  aDeck.display();
+  
+  cout << "Drawing a hand.\n";
+  aDeck.drawHand();
+  aDeck.display();
+  Card* toPlay = aDeck.chooseCards();
+  toPlay->display();
+  toPlay->play();
+  
+  
   
 }
 

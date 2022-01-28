@@ -10,6 +10,8 @@
 int main()
 {
   //testCard();
-  testLoadCard();
+//  testLoadCard();
+  //testCounter();
+  testDeck();
   return 0;
 }

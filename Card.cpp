@@ -22,7 +22,6 @@ Card::Card(const Card& toCopy)
 
 Card::~Card()
 {
-  
 }
 
 //int Card::play()
@@ -32,8 +31,7 @@ Card::~Card()
 
 int Card::displayCardInfo()const
 {
-  std::cout << "CARD: " << name << std::endl;
-  std::cout << std::right << std::setw(80) << description << std::endl;
+  std::cout << '[' << name << "]|" << description << '|' << std::endl;
   return 1;
 }
 
@@ -64,10 +62,9 @@ int Attack_Card::play()
 
 int Attack_Card::display()const
 {
-  std::cout << "==================================================\n";
+//  std::cout << "==================================================\n";
   Card::displayCardInfo();
-  std::cout << "Attack: +" << atkValue << std::endl;
-  std::cout << "==================================================\n";
+  std::cout << std::setw(30)<< std::right <<"Attack: +" << atkValue;
   return 1;
 }
 
@@ -98,10 +95,9 @@ int Defense_Card::play()
 
 int Defense_Card::display()const
 {
-  std::cout << "==================================================\n";
+//  std::cout << "==================================================\n";
   Card::displayCardInfo();
-  std::cout << "Defense: +" << defValue << std::endl;
-  std::cout << "==================================================\n";
+  std::cout << std::setw(30)<< std::right <<"Defense: +" << defValue;
   return 1;
 }
 
@@ -133,11 +129,10 @@ int Spell_Card::play()
 
 int Spell_Card::display()const
 {
-  std::cout << "==================================================\n";
+//  std::cout << "==================================================\n";
   Card::displayCardInfo();
-  if(atkValue) std::cout<< "Attack: " << atkValue << std::endl;
-  if(defValue) std::cout<< "Defense: " << defValue << std::endl;
-  if(hpValue) std::cout<< "Healing: " << hpValue << std::endl;
-  std::cout << "==================================================\n";
+  if(atkValue) std::cout<< std::right<< std::setw(30)<< "Attack: " << atkValue << std::endl;
+  if(defValue) std::cout<< std::right<< std::setw(30)<< "Defense: " << defValue << std::endl;
+  if(hpValue) std::cout<<  std::right<< std::setw(30)<<"Healing: " << hpValue << std::endl;
   return 1;
 }

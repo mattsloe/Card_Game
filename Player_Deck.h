@@ -1,7 +1,8 @@
 //
 //  Player_Deck.h
 //  Card_Game
-//
+//  The Player Deck manages the player's hand. It must always be init
+//  with a deck of cards to start the draw pile.
 //  Created by Matt Loera on 1/19/22.
 //
 
@@ -14,17 +15,23 @@ class Player_Deck
 {
 public:
   Player_Deck();
-  Player_Deck(const Player_Deck&);
   ~Player_Deck();
   
-  int drawHand()const;
+  int drawHand();
   int display()const;
-  int chooseCards(int playCard,int holdCard);
+  //@pre Deck must be at the end of the draw phase. hand should have 4 elements
+  //@post hand will have 1 card in it. Returns reference to a card to be played
+  //      By the calling object
+  Card* chooseCards();
   
 protected:
- // Card holdCard;
-  //Card rng_card[3];
-  std::vector<Card> drawCards;
+ // There are always 3 cards in the players hand. 1 Card gets drawn at the
+// beginning of the turn. Player chooses 1 of 4 cards to play. That card
+// gets popped, played, and discarded.
+  std::vector<Card*> hand;
+  std::vector<Card*> deck;
+  
+  int init();
   
 private:
 };
