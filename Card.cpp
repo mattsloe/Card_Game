@@ -24,11 +24,6 @@ Card::~Card()
 {
 }
 
-//int Card::play()
-//{
-//  return 1;
-//}
-
 int Card::displayCardInfo()const
 {
   std::cout << '[' << name << "]|" << description << '|' << std::endl;

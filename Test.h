@@ -14,6 +14,7 @@
 #include "Counter.h"
 #include "Player_Deck.h"
 #include <vector>
+#include "Player.h"
 
 using namespace std;
 
@@ -111,6 +112,9 @@ void testCounter()
 
 void testPlayer()
 {
+  //create a player
+  
+  //
   
 }
 
