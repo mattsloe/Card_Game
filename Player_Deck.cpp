@@ -47,9 +47,10 @@ Card* Player_Deck::chooseCards()
   display();
   //prompt for one card to play
   std::cout << "Pick one card to play: ";
-  while(choice < 0 || choice >= hand.size()){ //check user input range
+  while(choice <= 0 || choice > hand.size()){ //check user input range
     std::cin >> choice;
   }
+  choice--; //adjust to 0-indexed array
   
     //Save this card to return to calling object
   Card* cardToPlay = (hand[choice]);
@@ -57,17 +58,19 @@ Card* Player_Deck::chooseCards()
   hand.erase(hand.begin()+choice);
   
   //prompt for one card to hold
+  system("clear");
   display();
   choice = -1; //reset user choice
   std::cout << "Pick one card to hold: ";
-  while(choice < 0 || choice >= hand.size()){
+  while(choice <= 0 || choice > hand.size()){
     std::cin >> choice;
   }
+  choice--; //adjust to 0-indexed array
   Card* tmp = hand[choice];
   hand.clear();
   hand.push_back(tmp);
     //discard the rest
-  
+  system("clear");
   std::cout << "Holding:\n";
   display();
   return cardToPlay;

@@ -51,8 +51,7 @@ Attack_Card::~Attack_Card()
 
 int Attack_Card::play()
 {
-  std::cout << "Playing Attack Card\n";
-  return 1;
+  return atkValue;
 }
 
 int Attack_Card::display()const
@@ -60,6 +59,7 @@ int Attack_Card::display()const
 //  std::cout << "==================================================\n";
   Card::displayCardInfo();
   std::cout << std::setw(30)<< std::right <<"Attack: +" << atkValue;
+  std::cout << std::endl;
   return 1;
 }
 
@@ -84,15 +84,14 @@ Defense_Card::~Defense_Card()
 
 int Defense_Card::play()
 {
-  std::cout << "Playing Defense Card." << std::endl;
-  return 1;
+  return defValue;
 }
 
 int Defense_Card::display()const
 {
-//  std::cout << "==================================================\n";
   Card::displayCardInfo();
   std::cout << std::setw(30)<< std::right <<"Defense: +" << defValue;
+  std::cout<< std::endl;
   return 1;
 }
 
@@ -118,13 +117,19 @@ Spell_Card::~Spell_Card()
 
 int Spell_Card::play()
 {
-  std::cout << "Casting Spell Card" << std::endl;
+  return -99;
+}
+
+int Spell_Card::getStats(int*& array)
+{
+  array[0] = atkValue;
+  array[1] = defValue;
+  array[2] = hpValue;
   return 1;
 }
 
 int Spell_Card::display()const
 {
-//  std::cout << "==================================================\n";
   Card::displayCardInfo();
   if(atkValue) std::cout<< std::right<< std::setw(30)<< "Attack: " << atkValue << std::endl;
   if(defValue) std::cout<< std::right<< std::setw(30)<< "Defense: " << defValue << std::endl;

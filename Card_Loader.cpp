@@ -20,7 +20,7 @@ Spell_Card* readInSPL(ifstream&);
 //load deck from file
 int loadFromFile(vector<Card*>& deck)
 {
-  cout << "...loading deck from file\n";
+  //cout << "...loading deck from file\n";
   ifstream infile;
   char buf[1000];
   

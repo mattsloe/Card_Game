@@ -16,11 +16,12 @@
 #ifndef Player_h
 #define Player_h
 
-#include "Counter.h"
-#include "Player_Deck.h"
 #include <string>
+#include "Player_Deck.h"
+#include "Counter.h"
+
 /*This is the amount of HP a player starts with*/
-const int LIFELINE = 5;
+const int LIFELINE = 20;
 class Player
 {
 public:
@@ -28,16 +29,12 @@ public:
   Player(const Player&);
   ~Player();
   
-  int isAlive();
-  int playTurn(); //draw cards, play 1, hold 1, discard rest
+  //@post returns true if player is still alive
+  int isAlive()const;
   
-//  int displayCards();
-//  int chooseCards(int playCard, int holdCard);
+
+  int playTurn(Player& opponent);
   
-  //Client uses this to initiate an attack on the referenced Player.
-  //this Player will attack with ATK amount against referenced Player
-  //@post: return hp of opponent
-  int attackOpponent(const Player&);
   //interface for use by Player
   int attack(int);  //get attacked for int amount
   //interface for use by Card
@@ -48,11 +45,24 @@ public:
 private:
   
 protected:
-  std::string name;
+  //std::string name;
   Counter atkCounter;
   Counter defCounter;
   Counter hpCounter;
   Player_Deck deck;
+  
+  int displayStats()const;
+  
+  //Client uses this to initiate an attack on the referenced Player.
+  //this Player will attack with ATK amount against referenced Player
+  //@post: return hp of opponent
+  int attackOpponent(Player&);
+  
+  //cancels out attack amount 'point-for-point' with any DEF this
+  //Player has.
+  //@post returns attack amount less DEF, decrements DEF by attack
+  //      amount
+  int attackDefenses(int);
   
 };
 

@@ -1,8 +1,55 @@
 #Format:
 #Card Type|Card Name|Description|[stats ap,dp,hp]
 #Card type can be <ATK,DEF,SPL>
-ATK|Attacker|This is an attack card|2
-DEF|Defender|This is a defense card|1
+ATK|Attacker|This is a basic attack card|2
+ATK|Attacker|This is a basic attack card|2
+ATK|Attacker|This is a basic attack card|2
+ATK|Big Attacker| This card attacks more than average|5
+ATK|Big Attacker| This card attacks more than average|5
+ATK|Big Attacker| This card attacks more than average|5
+ATK|King|The king thinks he is useful in battle, but, in fact, does very little.|1
+ATK|Knight|The noblemen who support the king believe their power lies in their birthright|4
+ATK|Knight|The noblemen who support the king believe their power lies in their birthright|4
+ATK|Knight|The noblemen who support the king believe their power lies in their birthright|4
+ATK|Knight|The noblemen who support the king believe their power lies in their birthright|4
+SPL|Spicy Arrows|You now have spicy arrows for your attackers.|3 0 0
+SPL|Spicy Arrows|You now have spicy arrows for your attackers.|3 0 0
+ATK|Knave|*A Knave*|10
+ATK|Knave|*A Knave*|10
+ATK|Conscript|The footmen that make up the brunt of the force. They are battle hardened and know how to fight.|5
+ATK|Conscript|The footmen that make up the brunt of the force. They are battle hardened and know how to fight.|5
+ATK|Conscript|The footmen that make up the brunt of the force. They are battle hardened and know how to fight.|5
+ATK|Conscript|The footmen that make up the brunt of the force. They are battle hardened and know how to fight.|5
+ATK|Conscript|The footmen that make up the brunt of the force. They are battle hardened and know how to fight.|5
+ATK|Mercenary|Fighters for hire from distant lands.|6
+ATK|Mercenary|Fighters for hire from distant lands.|6
+ATK|Mercenary|Fighters for hire from distant lands.|6
+ATK|Groot|I....AM...GROOOOOOT!|10
+SPL|Weather|Call down a ferocious storm to bolster your attack. It may destroy some of your defenses in the process.|5 -2 0
+SPL|Weather|Call down a ferocious storm to bolster your attack. It may destroy some of your defenses in the process.|5 -2 0
+SPL|Major Healing Potion|Heals you substantially.|0 0 7
+SPL|Necromancy|Raise your fallen attackers for one more charge on the enemy. This will cost you Some HP|10 0 -5
+DEF|Chongus| Chongus will defend you with their massive size|9
+DEF|Pawn|A simple pawn. Cannon fodder.|1
+DEF|Pawn|A simple pawn. Cannon fodder.|1
+DEF|Pawn|A simple pawn. Cannon fodder.|1
+DEF|Pawn|A simple pawn. Cannon fodder.|1
+DEF|Brick Wall|Provides decent protection from attacks.|7
+DEF|Brick Wall|Provides decent protection from attacks.|7
+DEF|A Large Moat Filled With Gators|Provides excellent protection from anyone who dares to attack.|12
+DEF|A Small Pond Filled With Goldfish|Looks nice but provides little protection.|3
+DEF|A Small Pond Filled With Goldfish|Looks nice but provides little protection.|3
+DEF|A Small Pond Filled With Goldfish|Looks nice but provides little protection.|3
+DEF|Defender|This is a basic defense card|1
+DEF|Defender|This is a basic defense card|1
+DEF|Defender|This is a basic defense card|1
+DEF|Defender|This is a basic defense card|1
+SPL|Healing Potion|This heals for 2|0 0 2
+SPL|Healing Potion|This heals for 2|0 0 2
 SPL|Healing Potion|This heals for 2|0 0 2
 SPL|Defense Potion|This increases DP by 3|0 3 0
+SPL|Defense Potion|This increases DP by 3|0 3 0
+SPL|Defense Potion|This increases DP by 3|0 3 0
+SPL|Beserk Spell|This increases attack by 4 and takes away your defense|4 -99 0
+SPL|Beserk Spell|This increases attack by 4 and takes away your defense|4 -99 0
 SPL|Beserk Spell|This increases attack by 4 and takes away your defense|4 -99 0

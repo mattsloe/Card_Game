@@ -72,6 +72,7 @@ public:
   ~Spell_Card();
   
   int play();
+  int getStats(int*&);
   int display()const;
   
 protected:

@@ -118,8 +118,24 @@ void testPlayer()
   //create opponent
   Player player2;
   
+  //create references to players
+  Player* curPlayer = &player1;
+  Player* opponent = &player2;
   //try out playing a turn
-  
+  while(player1.isAlive() && player2.isAlive()){
+    curPlayer->playTurn(*(opponent));
+    
+    //switch player pointers
+    Player* tmp = opponent;
+    opponent = curPlayer;
+    curPlayer = tmp;
+    
+  }
+  if(!player1.isAlive() && !player2.isAlive()){
+    cout << "It's a draw!" << endl;
+  }
+  if(player1.isAlive()) cout << "Player 1 wins." << endl;
+  if(player2.isAlive()) cout << "Player 2 wins." << endl;
   
 }
 
@@ -130,7 +146,7 @@ void testDeck()
   
   cout << "Drawing a hand.\n";
   aDeck.drawHand();
-  aDeck.display();
+//  aDeck.display();
   Card* toPlay = aDeck.chooseCards();
   toPlay->display();
   toPlay->play();

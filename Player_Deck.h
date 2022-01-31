@@ -17,6 +17,8 @@ public:
   Player_Deck();
   ~Player_Deck();
   
+  //@pre Deck must be at the beginning of play phase. had should have 1 element.
+  //@post hand will have 4 elements
   int drawHand();
   int display()const;
   //@pre Deck must be at the end of the draw phase. hand should have 4 elements

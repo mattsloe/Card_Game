@@ -52,3 +52,9 @@ int Counter::display()const
   std::cout << count;
   return 1;
 }
+
+int Counter::reset()
+{
+  count = _default;
+  return 1;
+}
