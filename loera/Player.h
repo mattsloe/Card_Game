@@ -36,7 +36,6 @@ public:
   
   //Client uses this to initiate an attack on the referenced Player.
   //this Player will attack with ATK amount against referenced Player
-  //@post: return hp of opponent
   int attackOpponent(const Player&);
   //interface for use by Player
   int attack(int);  //get attacked for int amount

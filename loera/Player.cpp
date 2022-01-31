@@ -32,12 +32,12 @@ int Player::playTurn()
   return 1;
 }
 
-//int Player::chooseCards(int playCard, int holdCard)
-//{
-//  return 1;
-//}
+int Player::chooseCards(int playCard, int holdCard)
+{
+  return 1;
+}
 
-int Player::attackOpponent(const Player & enemy)
+int Player::attackOpponent(const Player & enemy, int ATK)
 {
   return 1;
 }

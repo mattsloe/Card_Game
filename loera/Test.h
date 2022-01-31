@@ -113,13 +113,8 @@ void testCounter()
 void testPlayer()
 {
   //create a player
-  Player player1;
   
-  //create opponent
-  Player player2;
-  
-  //try out playing a turn
-  
+  //
   
 }
 

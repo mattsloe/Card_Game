@@ -12,7 +12,6 @@ int main()
   //testCard();
 //  testLoadCard();
   //testCounter();
-  //testDeck();
-  testPlayer();
+  testDeck();
   return 0;
 }
