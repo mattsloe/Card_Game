@@ -1,5 +1,5 @@
 # Card Game Writeup
-  *Matt Loera* \
+  *Matt Loera*
 # Introduction
 This program is a Card Game that uses the Command Line Interface.  The card game is merely an example game showing some basic mechanics that can be implemented using the Card Game Libraries. The Card Game Library includes all of the code to handle different players, different card types, collections of cards (into a Player_Deck), etc. This program was my first attempt at designing a program using an Object-Oriented paradigm. 
 
