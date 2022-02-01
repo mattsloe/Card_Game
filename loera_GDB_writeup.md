@@ -1,5 +1,5 @@
 # Debugging and Testing
-  * Matt Loera * 
+  *Matt Loera* 
 I made sure to build the testing into the program from the beginning. This was especially important, since the modularity of the program design would make it very granular. I included a supplementary file called "test" that contained various test cases for the program. Working with gdb, this made it very easy to track function calls and breakpoints for the program, as they would all be in one place. 
 
 Since I strove for a more test-driven development, I used gdb extensively at every step of programming this assignment. I tested every Class and function as I implemented them. This allowed me to work out a lot of the kinks at the beginning instead of having to step between different aspects of the program to chase down unwanted behavior or memory leaks. 
